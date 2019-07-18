@@ -2,33 +2,33 @@
 
 ## Express Routing & Connected API
 
-### Author: Joseph Hangarter
+### Author: Joseph Hangarter & most of the class
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
 * [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+
 
 ### Modules
-#### `index.js` - starts server
-#### `app.js` - 
+#### `index.js` - starts server connects to mongo
+#### `app.js` - routes
+#### `mongo.js` - class Model with CRUD method
 #### `404.js` - middleware function 404 error
-#### `error.js` - middleware function 500 error
+#### `.js` - middleware function 500 error
+#### `categories.js` - extends from Model with schema in constructor
+#### `categories-schema.js` - schema
+#### `categories.test.js` - test for ``categories.js`
+#### `products.js` - extends from Model with schema in constructor
+#### `products.schema.js` - schema
+#### `products.test.js` - test for `products.js`
+#### `app.test.js` - test for `app.js`
 #### `supergoose.js` - Combines SuperTest and Mongoose Memory Server; 
 
 ##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+CRUD method
 
 ### Setup
 #### `.env` requirements
@@ -38,15 +38,9 @@ Usage Notes or examples
 #### Running the app
 * `node index.js`
 * `mongo on a second terminal`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
 * `npm test`
-* What assertions were made?
-* What assertions need to be / should be made?
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](./images/UML.jpg)
